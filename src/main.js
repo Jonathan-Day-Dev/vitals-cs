@@ -1,21 +1,13 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import { createRouter, createWebHistory } from 'vue-router'
+import router from './router';
+import './assets/css/app.css';
 
-import Home from './components/Home.vue';
+import Navbar from './components/UX/nav/Navbar.vue';
 
 const app = createApp(App)
 
-const router = createRouter({
-    history: createWebHistory(),
-    routes: [
-        {
-             path: "/",
-             component: Home
-        }
-    ]
-})
-
+app.component("Navbar", Navbar);
 app.use(router);
 
 app.mount('#app')
