@@ -2,6 +2,11 @@
     <nav>
         <router-link to="/">Home</router-link>
         <router-link to="/vue">Vue</router-link>
+        <router-link to="/inertia">Inertia</router-link>
+        <router-link to="/tailwind">Tailwind</router-link>
+        <router-link to="/axios">Axios</router-link>
+        <router-link to="/laravel">Laravel</router-link>
+        <router-link to="/mysql">MySql</router-link>
     </nav>
 </template>
 
